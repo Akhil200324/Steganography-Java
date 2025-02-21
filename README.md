@@ -76,7 +76,4 @@ Enter the passcode used during encryption.
 
 Click Decrypt to retrieve the hidden message.
 
-
-Screenshots
-
 Done.
