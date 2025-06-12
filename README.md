@@ -1,79 +1,93 @@
-Image Steganography in Java
+# Image Steganography in Java
 
-Overview
+## Overview
 
-This project demonstrates an Image Steganography tool implemented in Java, which allows users to embed secret messages within images for secure communication. The application provides a Graphical User Interface (GUI) that lets users easily encrypt and decrypt hidden messages within image files using a passcode for added security. This project is an excellent example of how Java can be used for image manipulation and data security.
+**Image Steganography in Java** is a desktop application that allows users to securely embed and extract secret messages within images using steganography techniques. This project provides a simple, cross-platform GUI (built with Java Swing) for safe and private communication.
 
-Features
+> **Steganography** is the practice of hiding messages or information within other non-secret text or data. In this project, you can hide text messages inside image files.
 
-**Encrypt and Decrypt Messages**: Hide and retrieve secret messages inside images.
+## Table of Contents
 
-**GUI Interface**: Simple and user-friendly interface built with Java Swing.
+- [Features](#features)
+- [Technology Used](#technology-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-**Passcode Protection**: Secure encryption and decryption using a passcode.
+## Features
 
-**Cross-Platform Support**: Runs on Windows, macOS, and Linux.
+- **Encrypt and Decrypt Messages:** Hide and retrieve secret messages inside images.
+- **Passcode Protection:** Secure your data with a passcode for extra privacy.
+- **GUI Interface:** User-friendly interface built with Java Swing.
+- **Cross-Platform Support:** Runs on Windows, macOS, and Linux.
+- **Image File Support:** Works with standard image formats like JPG (and optionally PNG).
+- **Real-Time Status Updates:** Shows progress during encryption and decryption.
 
-**Image File Support**: Works with standard image formats like JPG.
+## Technology Used
 
-**Real-Time Status Updates**: Displays status messages during the encryption and decryption process.
+- **Programming Language:** Java (JDK 8+)
+- **Libraries/Frameworks:**
+  - Java Swing (for GUI)
+  - Java AWT (for image handling/UI layout)
+  - Java ImageIO (for image read/write)
+  - Java File Handling
+- **Development Environment:** Eclipse, IntelliJ IDEA, NetBeans, or any Java IDE
 
+## Installation
 
-**Technology Used**
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Akhil200324/Steganography-Java.git
+   cd Steganography-Java
+   ```
 
-Programming Language: Java
+2. **Open the project** in your favorite Java IDE (Eclipse, IntelliJ IDEA, etc.).
 
-Libraries/Frameworks:
+3. **Ensure Java JDK 8 or later is installed** on your system.
 
- - Java Swing (for GUI)
+4. **Build and run** the project from your IDE.
 
- - Java AWT (for image handling and UI layout)
+## Usage
 
- - Java ImageIO (for reading and writing images)
+### Encrypt a Message
 
- - Java File Handling (for file operations)
+1. Launch the application.
+2. Click the **Select Image** button and choose a cover image.
+3. Enter your secret message and a passcode.
+4. Click **Encrypt** to embed the message.
+5. Save the newly created steganographic image.
 
+### Decrypt a Message
 
-Platform Compatibility: Windows, macOS, Linux
+1. Launch the application.
+2. Select the image that contains a hidden message.
+3. Enter the passcode used during encryption.
+4. Click **Decrypt** to reveal the hidden message.
 
-Development Environment: Eclipse, IntelliJ IDEA, or NetBeans
+## Troubleshooting
 
+- **Image not loading?**  
+  Ensure the image is in a supported format (JPG, optionally PNG/BMP).
+- **Wrong passcode?**  
+  The correct passcode is required to decrypt and reveal the message.
+- **Application won't start?**  
+  Verify that you have Java JDK 8 or newer installed and properly set up in your system’s PATH.
 
-Installation
+## Contributing
 
-1. Clone the repository:
+Contributions are welcome!  
+To contribute, please fork the repository, create a new branch, and submit a pull request.  
+For major changes, please open an issue first to discuss what you would like to change.
 
-git clone https://github.com/Akhil200324/Steganography-Java.git
+## License
 
+This project is licensed under the [MIT License](LICENSE).  
+<!-- If you want to use a different license, specify here and add the file accordingly. -->
 
-2. Open the project in your favorite IDE (e.g., Eclipse or IntelliJ IDEA).
+## Acknowledgments
 
-
-3. Make sure you have the JDK 8 or later installed on your system.
-
-
-4. Build and run the project.
-
-
-
-Usage
-
-1. Encrypt a Message:
-
-Select an image using the Select Image button.
-
-Enter your secret message and passcode.
-
-Click Encrypt to hide the message inside the image.
-
-
-
-2. Decrypt a Message:
-
-Select the encrypted image.
-
-Enter the passcode used during encryption.
-
-Click Decrypt to retrieve the hidden message.
-
-Done.
+- Java official documentation
+- Open-source steganography research
